@@ -167,8 +167,7 @@ nav{
 }
 #page2-grid{
     display: grid;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 700px,700px,800px,700px;
+  
     
 }
 #headline-img{
