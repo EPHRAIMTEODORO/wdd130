@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Quicksand&display=swap');
+#content{max-width: 1600px;}
+#content{margin:0 auto;}
+nav a {
+    text-align: center;
+    color:white; 
+    text-decoration: none;
+    font-family: "Poor Story",Helvetica, sans-serif;
+    padding: 35px;
+    font-size: 1.5em;
+   
+   }
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+header{
+    background-color:#364a20 ;
+    display: grid;
+    grid-template-columns: 150px auto;
+
+}
+nav a:hover{
+    background-color: #dda15e;color: black;
+}
+.logo{
+    width: 120px;
+}
+footer{
+    background-color: #364a20;
+    font-family: "Poor Story",Helvetica, sans-serif;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;font-size: 1.5em;
+    padding: 25px 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #dda15e;
+    color:black;
+    text-decoration: underline;}
+body{
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        background-color:#fefae0;
+    }
+#hero-img{
+    width: 100%;
+    
+}
+#hero{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        margin-top: -100px; 
+    }
+#hero-box {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        z-index: -1;
+    }
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
+    color:#fefae0 ;
+    }
+#hero-msg h1{
+    text-align: center;
+    font-size: 80px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #364a20;
+}
+#hero-msg p{
+    text-align: center;
+    background-color: RGBA(75,206,38,0.5);
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: white;
+   
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.home-grid{
+    margin-top: 100px;
+}
+#garden-img{
+    margin: 20px;
+}
+.home-grid p{
+    text-align: center;
+    margin: 30px;
+}
