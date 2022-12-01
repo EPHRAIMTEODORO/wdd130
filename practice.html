@@ -7,14 +7,78 @@
         <title>
            All About Me
         </title>
+        <link rel="stylesheet" href="practice.css">
     </head>
     <body>
-        <h1>About Me</h1>
-        <img alt="Image of me" src="C:\Users\Acer-vero\Desktop\htmlcss\wdd130\pday-zambo.jpg" width="500">
-        <h2>Ephraim R. Teodoro</h2>
-        <h2>(Ephraim)</h2>
-        <p>Hello everyone, I live in the Philippines and I plan to pursue a degree on computer science. This is a photo We took during our P-day on my mission and the place looked a lot like the grove where Joseph Smith prayed so we all took a "first vision pose" and that is me trying to act like there is a bright light above me. I really like reading novels and playing games that has stories in it. I love dogs. I also like puzzzles which helped me in my previous programming subject because coding felt like solving a puzzle. I chose web design because it will help me have an early start on my career path in programming. I have been a member of the Church of Jesus Christ of Latter Day Saints since my childhoos and i have also served my mission. 
-        </p>
+        <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="allegro/marcotting.html">Marcotting</a>
+        <a href="allegro/grafting.html">Grafting</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+  
+  </div>
+  
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()"><img class="logo" src="allegro/green life logo.png" alt="logo"></span>
+  <script>
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+  </script>
+  <div id="hero">
+    <div id="hero-box">
+        <img id="hero-img" src="allegro/image/vegetable garden.jpg" alt="vegetable garden">
+    </div>
+    <section id="hero-msg">
+        <h1 class="home-title">Green Life</h1>
+    <p>
+        The purpose of my website is to provide knowledge about vegetable gardening, grafting, and marcotting. My website can help people know why some people use grafting and marcotting instead of just using seeds to grow plants.  The website contains information that are easy to understand and instructions that are easy to follow. It will also include images with instruction so that the audience can know what vegetable gardening, marcotting and grafting looks like.
+    </p>>
+    </section>
+
+</div>
+<main class="home-grid">
+    <img id="garden-img" src="allegro/image/backyard garden.jpg" alt="backyard garden">
+    <p>
+        Vegetable gardening is a rewarding activity that can provide fresh, flavorful produce. It offers many of the same benefits as other gardening activities, including exercise, fresh air, landscape beautification and enjoyment. In addition, it promotes a varied and nutritious diet at a lower cost by reducing food expenditures more than the costs associated with growing the vegetables. Moreover, many gardeners find that their homegrown produce tastes better than what they can buy at a supermarket, thanks to freshness and more choice of varieties.
+    If you love to have fresh produces in the spring and summer, you should consider creating a home vegetable garden. Growing a vegetable garden is a fun and healthy hobby that anyone can excel at. While gardening, you may find that your troubles and stresses of the day simply float away. Home vegetable gardening relieves stress and allows you to be out in the sun. Vegetable gardening is proven to lower blood pressure and clear the mind. Also, the act of nurturing plants and watching them grow is rather soothing. And it can look good too!
+    Anyone can create a home vegetable garden. As long as you have dirt somewhere, you can create an outdoor vegetable garden in the solid ground. Even if you don’t have a plot of dirt, you can buy a few pots and create a container garden.
+
+    </p>
+
+</main>
+<footer>
+    <p>Green Life &copy; 2022 - Ephraim R. Teodoro</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="allegro/image/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="allegro/image/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="allegro/image/instagram.png" alt="instagram icon">
+        </a>
+
+</footer>
+        
     </body>
     
 </html>

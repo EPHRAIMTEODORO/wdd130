@@ -1,0 +1,162 @@
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Quicksand&display=swap');
+#content{max-width: 1600px;}
+#content{margin:0 auto;}
+nav a {
+    text-align: center;
+    color:white; 
+    text-decoration: none;
+    font-family: "Poor Story",Helvetica, sans-serif;
+    padding: 35px;
+    font-size: 1.5em;
+   
+   }
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+header{
+    background-color:#364a20 ;
+    display: grid;
+    grid-template-columns: 150px auto;
+
+}
+nav a:hover{
+    background-color: #dda15e;color: black;
+}
+.logo{
+    width: 90px;
+}
+footer{
+    background-color: #364a20;
+    font-family: "Poor Story",Helvetica, sans-serif;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;font-size: 1.5em;
+    padding: 25px 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #dda15e;
+    color:black;
+    text-decoration: underline;}
+body{
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        background-color:#fefae0;
+    }
+#hero-img{
+    width: 100%;
+   
+    
+}
+#hero{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        margin-top: -100px; 
+    }
+#hero-box {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        z-index: -1;
+    }
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
+    color:#fefae0 ;
+    }
+#hero-msg h1{
+    text-align: center;
+    font-size: 80px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #364a20;
+    font-family: "Poor Story",Helvetica, sans-serif;
+}
+#hero-msg p{
+    text-align: center;
+    background-color: RGBA(75,206,38,0.5);
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Quicksand",Helvetica, sans-serif;
+   
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.home-grid{
+    margin-top: 100px;
+}
+#garden-img{
+    margin: 20px;
+}
+.home-grid p{
+    text-align: center;
+    margin: 30px;
+    font-family: "Quicksand",Helvetica, sans-serif;
+}
